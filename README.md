@@ -1,7 +1,7 @@
 # Szenen-Timer für QLab
 *🇬🇧 English version below.*
 
-Funktioniert mit der kostenlosen Version von QLab 5 unter macOS.
+Python-Skript, funktioniert mit der kostenlosen Version von QLab 5 unter macOS.
 
 Da in der kostenlosen Version von QLab keine Script-/Control-Cues erlaubt sind, nutzen wir normale WAIT CUES als Stoppuhren im Hintergrund. Wichtig ist für uns nur, dass diese Cues laufen, solange eine Szene läuft. Alle Cues, die gerade in QLab laufen (egal ob Edit or Show Mode), kann das Skript über AppleScript abfragen. Während das Skript läuft, fragt es diese aktiven Cues in einem festen Intervall ab und wertet sie aus. So werden Szenenwechsel registriert und die Laufzeiten der Szenen berechnet.
 
@@ -56,7 +56,7 @@ VORBEDINGUNGEN:
 
 # Scene Timer for QLab
 
-Works with the free version of QLab 5 on macOS.
+Python script working with the free version of QLab 5 on macOS.
 
 Since script/control cues aren't available in the free version of QLab, we use normal WAIT CUES as background stopwatches. The only thing that matters for our purposes is that these cues are running while a scene is going. The script can query all cues currently running in QLab (no matter whether Edit or Show mode) via AppleScript. While running, the script periodically queries these active cues at a fixed interval and evaluates them. This is how scene changes are registered and scene durations are calculated.
 
